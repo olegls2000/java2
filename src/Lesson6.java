@@ -37,9 +37,9 @@ public class Lesson6 {
         myMeth();
 
         //Animal: kind, name, gender
-        Animal cat = new Animal("Barsik", 2);
-        Animal dog = new Animal("Pirat", 10);
-        Animal pig = new Animal("Pepa", 1);
+        Animal cat = new Animal("Barsik", 2,"cat", Gender.MALE);
+        Animal dog = new Animal("Pirat", 10, "dog", Gender.FEMALE);
+        Animal pig = new Animal("Pepa", 1, "pig", Gender.FEMALE);
 
         Animal[] zoo = {cat, dog, pig};
         Animal oldest = getOldestAnimal(zoo);
