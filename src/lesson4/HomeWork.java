@@ -1,4 +1,6 @@
-public class HomeWork4 {
+package lesson4;
+
+public class HomeWork {
     public static void main(String[] args) {
         int[] array = getFiboNumbersArray();
 

@@ -1,9 +1,10 @@
+package lesson1;
 
 /**
  * primitive types;
  * arithmetic operations
  */
-public class Lesson1 {
+public class ClassWork {
 
     public static void main(String[] args) {
         //8 bit  -128 .. 127

@@ -1,4 +1,6 @@
-public class HomeWork3 {
+package lesson3;
+
+public class HomeWork {
 
     public static void main(String[] args) {
         int[] array = generateArrayOfInt(10, 90, 100);

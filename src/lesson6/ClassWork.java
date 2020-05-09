@@ -1,4 +1,10 @@
-public class Lesson6 {
+package lesson6;
+
+import data.Animal;
+import data.Student;
+import enums.Gender;
+
+public class ClassWork {
     public static void main(String[] args) {
         //primitive type!!!
         int i = 5;
@@ -36,7 +42,7 @@ public class Lesson6 {
         System.out.println("Objects are cool!!!!");
         myMeth();
 
-        //Animal: kind, name, gender
+        //data.Animal: kind, name, gender
         Animal cat = new Animal("Barsik", 2,"cat", Gender.MALE);
         Animal dog = new Animal("Pirat", 10, "dog", Gender.FEMALE);
         Animal pig = new Animal("Pepa", 1, "pig", Gender.FEMALE);

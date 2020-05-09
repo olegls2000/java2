@@ -1,4 +1,8 @@
-public class HomeWork7 {
+package lesson7;
+
+import enums.Month;
+
+public class ClassWork {
 
     public static void main(String[] args) {
         //Enum Home Work:
@@ -7,7 +11,6 @@ public class HomeWork7 {
         System.out.println("Count: " + summerCount);
 
         Month.JANUARY.printSeason();
-
 
         //Scope explanation:
         int out = 1;

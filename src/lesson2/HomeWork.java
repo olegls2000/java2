@@ -1,4 +1,4 @@
-/*
+package lesson2;/*
 ------------L2: Homework:------------
         1. Cоздайте метод, который принимает в качестве параметров два вещественных числа и проверят какое из чисел больше,
         если первое то метод выводит сообщение"первое больше" иначе  "второе больше".
@@ -14,7 +14,7 @@
         либо сообщать, что корней нет. (https://www.mathsisfun.com/algebra/quadratic-equation.html posmotret Summary)
 */
 
-public class HomeWork2 {
+public class HomeWork {
     public static void main(String[] args) {
         myMethod(99.33333, 99.333);
         olegsMethod(10, 15, 1);

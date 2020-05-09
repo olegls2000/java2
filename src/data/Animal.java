@@ -1,3 +1,7 @@
+package data;
+
+import enums.Gender;
+
 public class Animal {
 
     public Animal(String name, int age, String kind, Gender gender) {
@@ -7,8 +11,8 @@ public class Animal {
         this.gender = gender;
     }
 
-    final String kind;
-    final Gender gender;
-    String name;
-    int age;
+    public final String kind;
+    public final Gender gender;
+    public String name;
+    public int age;
 }

@@ -1,8 +1,10 @@
+package lesson2;
+
 /**
  * logical operations;
  * logical constructions.
  */
-public class Lesson2 {
+public class ClassWork {
     public static void main(String[] args) {
         printNumber(0, "EE");
         //  >, <, ==, >=, <=, !=

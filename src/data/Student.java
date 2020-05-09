@@ -1,7 +1,9 @@
+package data;
+
 public class Student {
 
     public Student(){
-        System.out.println("Hello from Student Constructor");
+        System.out.println("Hello from data.Student Constructor");
     }
 
     public Student(String firstName){
@@ -18,12 +20,12 @@ public class Student {
         this.lastName = lastName;
     }
 
-    int age;
-    String firstName;
-    String lastName;
-    String email;
-    String group;
-    long idCode;
+    public int age;
+    public String firstName;
+    public String lastName;
+    public String email;
+    public String group;
+    public long idCode;
 
     public void changeGroup(String newGroup) {
         this.group = newGroup;

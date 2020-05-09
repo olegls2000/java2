@@ -1,9 +1,11 @@
+package enums;
+
 public enum Month {
     JANUARY("winter"),
     MARCH("spring"),
     JUNE("summer");
 
-    String season;
+    public String season;
 
     Month(String season) {
         this.season = season;

@@ -1,5 +1,7 @@
+package lesson3;
+
 //Array
-public class Lesson3 {
+public class ClassWork {
     public static void main(String[] args) {
         int x = 5;
 

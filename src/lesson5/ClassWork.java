@@ -1,4 +1,6 @@
-public class Lesson5 {
+package lesson5;
+
+public class ClassWork {
     //   WHILE / DO-WHILE
     public static void main(String[] args) {
         int a = 10;
