@@ -1,5 +1,10 @@
 package lesson4;
 
+import utils.MyUtils;
+
+import static utils.MyUtils.printForward;
+import static utils.MyUtils.printReverse;
+
 public class ClassWork {
     /*
     Создайте метод, возвращающий массив из всех нечетных чисел от 0 до 30,
@@ -9,19 +14,10 @@ public class ClassWork {
 
     public static void main(String[] args) {
         int[] arr = getOddArray();
-        double average = getAverage(arr);
+        double average = MyUtils.getAverage(arr);
         System.out.println(average);
 
         method2();
-    }
-
-    public static double getAverage(int[] array) {
-        long sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            //sum = sum + array[i];
-            sum += array[i];
-        }
-        return sum / array.length;
     }
 
     public static int[] getOddArray() {
@@ -40,25 +36,7 @@ public class ClassWork {
         return result;
     }
 
-    public static void printForward(int[] array) {
-        System.out.print("[");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
-            System.out.print(", ");
-        }
-        System.out.print("]");
-        System.out.println();
-    }
 
-    public static void printReverse(int[] array) {
-        System.out.print("[");
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i]);
-            System.out.print(", ");
-        }
-        System.out.print("]");
-        System.out.println();
-    }
 
     /*
 Создайте массив из случайных чисел от -10 до 10 length = 6,

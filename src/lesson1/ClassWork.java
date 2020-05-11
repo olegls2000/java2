@@ -77,5 +77,8 @@ public class ClassWork {
         System.out.println(tt++);
         System.out.println(tt);
 
+        int r = (int) (   ((double) 7 / 3) * 10)    %     31;
+        System.out.println(r);
+
     }
 }

@@ -1,5 +1,7 @@
 package lesson3;
 
+import static utils.MyUtils.getRandomFromRange;
+
 //Array
 public class ClassWork {
     public static void main(String[] args) {
@@ -70,10 +72,6 @@ public class ClassWork {
         int randomNumber4 = getRandomFromRange(9000, 10_000);
 
         System.out.println(randomNumber);
-    }
-
-    public static int getRandomFromRange(int left, int right) {
-        return (int) (Math.random() * right - left) + left;
     }
 
     public static void printSum(int number1, int number2) {

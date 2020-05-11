@@ -8,6 +8,4 @@ public class Car {
     private boolean blinker;
     private boolean breakPedal;
     private boolean acceleratorPedal;
-
-
 }
