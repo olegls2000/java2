@@ -1,6 +1,6 @@
 package data;
 
-public class SimpleTriangle {
+public class SimpleTriangle extends Shape {
     private int a;
     private int b;
     private int c;
@@ -16,7 +16,6 @@ public class SimpleTriangle {
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Invalid sides combination!");
         }
-
         int ab = a + b;
         int bc = b + c;
         int ac = a + c;
@@ -25,9 +24,8 @@ public class SimpleTriangle {
         }
     }
 
-
-    public int getPerimetr() {
-        //return this.a + this.b + this.c;
+    public double getPerimetr() {
+        System.out.println("Hello from SimpleTriangle");
         return a + b + c;
     }
 
@@ -39,7 +37,6 @@ public class SimpleTriangle {
         sidesCheck(a, this.b, this.c);
         this.a = a;
     }
-
 
     public int getB() {
         return b;
