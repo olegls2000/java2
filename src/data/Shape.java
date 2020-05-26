@@ -1,8 +1,9 @@
 package data;
 
-public class Shape {
-    public double getPerimetr() {
-        System.out.println("Hello from Shape");
-        return 0.0;
-    }
+public abstract class Shape extends Parent {
+    public abstract double getPerimetr();
+
+    public abstract double getSquare();
+
+    public abstract void methodFromParent();
 }

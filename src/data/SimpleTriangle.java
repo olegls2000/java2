@@ -1,9 +1,27 @@
 package data;
 
+import java.util.Objects;
+
 public class SimpleTriangle extends Shape {
     private int a;
     private int b;
     private int c;
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SimpleTriangle)) return false;
+        SimpleTriangle that = (SimpleTriangle) o;
+        return a == that.a &&
+                b == that.b &&
+                c == that.c;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(a, b, c);
+    }
 
     public SimpleTriangle(int a, int b, int c) {
         sidesCheck(a, b, c);
@@ -27,6 +45,16 @@ public class SimpleTriangle extends Shape {
     public double getPerimetr() {
         System.out.println("Hello from SimpleTriangle");
         return a + b + c;
+    }
+
+    @Override
+    public double getSquare() {
+        return (a * b * c) / 2;
+    }
+
+    @Override
+    public void methodFromParent() {
+        System.out.println("Hello from Triangle!!!!");
     }
 
     public int getA() {

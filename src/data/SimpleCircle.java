@@ -11,4 +11,19 @@ public class SimpleCircle extends Shape {
         System.out.println("Hello from SimpleCircle");
         return 2 * Math.PI * radius;
     }
+
+    //@Override
+    public void fromCircleMethod(){
+
+    }
+
+    @Override
+    public double getSquare() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public void methodFromParent() {
+        System.out.println("Hello from Triangle!!!!");
+    }
 }

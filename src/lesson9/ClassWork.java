@@ -24,7 +24,7 @@ public class ClassWork {
     // Под добавлением автомобиля подразумевается покупка за деньги,
     // которы имеются в кассе и размешение его на любом первом попавшемся свободном месте.
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Auto bmw = new Auto();
         Auto toyota = new Auto(Color.RED, 1_350, 25_000);
         AutoSalon salon = new AutoSalon(500_000l);
@@ -34,7 +34,6 @@ public class ClassWork {
         salon.printReport();
         salon.sellAuto();
         salon.buyAuto(toyota);
-
 
     }
 }
