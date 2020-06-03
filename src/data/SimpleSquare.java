@@ -21,4 +21,11 @@ public class SimpleSquare extends Shape {
     public void methodFromParent() {
         System.out.println("Hello from Square!!!!");
     }
+
+    @Override
+    public String toString() {
+        return "SimpleSquare{" +
+                "a=" + a +
+                '}';
+    }
 }

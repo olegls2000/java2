@@ -2,6 +2,8 @@ package data;
 
 import enums.Color;
 
+import java.util.Objects;
+
 import static utils.MyUtils.getRandomFromRange;
 
 public class Auto {
@@ -12,8 +14,21 @@ public class Auto {
     private static final int MAX_PRICE = 100_000;
 
     private Color color;
+
+    @MaxValue
     private int weight;
+
+    @MaxValue(100_000)
     private int price;
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "color=" + color +
+                ", weight=" + weight +
+                ", price=" + price +
+                '}';
+    }
 
     public Auto() {
         this.color = getRandomColors();
@@ -23,7 +38,6 @@ public class Auto {
 
     public Auto(Color color, int weight, int price) {
         checkWeight(weight);
-        checkPrice(price);
         this.color = color;
         this.weight = weight;
         this.price = price;
@@ -35,12 +49,6 @@ public class Auto {
         int randomIndex = getRandomFromRange(0, colors.length - 1);
 
         return colors[randomIndex];
-    }
-
-    private void checkPrice(int price) {
-        if (price < MIN_PRICE || price > MAX_PRICE) {
-            throw new IllegalArgumentException("Invalid Price!");
-        }
     }
 
     private void checkWeight(int weight) {
@@ -71,7 +79,21 @@ public class Auto {
     }
 
     public void setPrice(int price) {
-        checkPrice(price);
         this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Auto)) return false;
+        Auto auto = (Auto) o;
+        return weight == auto.weight &&
+                price == auto.price &&
+                color == auto.color;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, weight, price);
     }
 }

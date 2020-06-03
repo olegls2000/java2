@@ -26,4 +26,11 @@ public class SimpleCircle extends Shape {
     public void methodFromParent() {
         System.out.println("Hello from Triangle!!!!");
     }
+
+    @Override
+    public String toString() {
+        return "SimpleCircle{" +
+                "radius=" + radius +
+                '}';
+    }
 }

@@ -23,6 +23,15 @@ public class SimpleTriangle extends Shape {
         return Objects.hash(a, b, c);
     }
 
+    @Override
+    public String toString() {
+        return "SimpleTriangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
+
     public SimpleTriangle(int a, int b, int c) {
         sidesCheck(a, b, c);
         this.a = a;
